@@ -15,9 +15,11 @@ ynh_abort_if_errors
 
 get__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*') # e.g. #cccccc
+    echo $current_color
 }
 get__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')       # e.g. #000000
+    echo $current_color
 }
 
 #=================================================
@@ -26,11 +28,11 @@ get__font() {
 
 set__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
-    new_color=$background;    
+    new_color=$background  
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
 }
 set__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
-    new_color=$font;    
+    new_color=$font
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
 }
