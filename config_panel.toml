@@ -10,8 +10,10 @@ name = "Font Compare settings"
         ask = "Default background color"
         type = "color"
         default = "#cccccc"
+        #bind = "background_color:__INSTALL_DIR__/ynh_fontcompare_settings.yml"
 
         [main.default_colors.font]
         ask = "Default font color"
         type = "color"
         default = "#000000"
+        #bind = "font_color:__INSTALL_DIR__/ynh_fontcompare_settings.yml"
