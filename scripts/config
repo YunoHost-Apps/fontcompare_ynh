@@ -30,11 +30,13 @@ set__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
     new_color=$background  
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
+    sed -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
 }
 set__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
     new_color=$font
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
+    sed -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
 }
 
 #=================================================
