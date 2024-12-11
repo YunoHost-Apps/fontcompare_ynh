@@ -36,3 +36,9 @@ set__font() {
     new_color=$font
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
 }
+
+#=================================================
+# GENERIC FINALIZATION
+#=================================================
+
+ynh_app_config_run $1
