@@ -15,10 +15,12 @@ ynh_abort_if_errors
 
 get__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*') # e.g. #cccccc
+    #current_color=$(ynh_app_setting_get $app 'background_color')
     echo $current_color
 }
 get__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')       # e.g. #000000
+    #current_color=$(ynh_app_setting_get $app 'font_color')
     echo $current_color
 }
 
@@ -30,13 +32,15 @@ set__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
     new_color=$background  
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
-    sed -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
+    sed -i -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
+    #ynh_app_setting_set --app=$app --key=background_color --value="$background_color"
 }
 set__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
     new_color=$font
     ynh_replace --match=$current_color --replace=$new_color --file="$install_dir/index.html"
-    sed -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
+    sed -i -e "/$current_color/{s//$new_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
+    #ynh_app_setting_set --app=$app --key=font_color --value="$font_color"
 }
 
 #=================================================

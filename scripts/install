@@ -4,6 +4,16 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
+
+background_color="#E5E4E2"
+#ynh_app_setting_set --app=$app --key=background_color --value="$background_color"
+
+font_color="#000000"
+#ynh_app_setting_set --app=$app --key=font_color --value="$font_color"
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
