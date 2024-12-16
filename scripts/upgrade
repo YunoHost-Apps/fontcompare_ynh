@@ -26,7 +26,7 @@ ynh_config_add_nginx
 # Restore saved settings
 reset_background_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
 ynh_replace --match=$reset_background_color --replace=$saved_background_color --file="$install_dir/index.html"
-sed -i -e "/$reset_background_color/{s//$saved_font_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css" #only first match (should be the one in body{})
+sed -i -e "/$reset_background_color/{s//$saved_font_color/;:p" -e 'n;bp' -e '}' "$install_dir/css/style.css"    #only first match (should be the one in body{})
 
 reset_font_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')
 ynh_replace --match=$reset_font_color --replace=$saved_font_color --file="$install_dir/index.html"
