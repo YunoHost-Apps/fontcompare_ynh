@@ -15,11 +15,13 @@ ynh_abort_if_errors
 
 get__background() {
     current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*') # e.g. #cccccc
-    echo $current_color
+    "\"echo $current_color\""
+    #echo $current_color # waiting for https://github.com/YunoHost-Apps/fontcompare_ynh/issues/1
 }
 get__font() {
     current_color=$(grep 'id="fontColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*')       # e.g. #000000
-    echo $current_color
+    "\"echo $current_color\""
+    #echo $current_color # waiting for https://github.com/YunoHost-Apps/fontcompare_ynh/issues/1
 }
 
 #=================================================
