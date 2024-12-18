@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "fontcompare"
 name = "Font Compare"
-description.en = "An easy way to dynamically compare locally hosted fonts"
-description.fr = "Un moyen facile de comparer des polices de caractères hébergées localement de façon dynamique"
+description.en = "Dynamically compare locally hosted fonts"
+description.fr = "Comparer des polices de caractères hébergées localement de façon dynamique"
 
 version = "1.4~ynh1"
 
