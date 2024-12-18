@@ -18,8 +18,7 @@ No se debe editar a mano.
 
 ## Descripción general
 
-Font Compare is an easy way to dynamically compare locally hosted fonts.
-Everything is run client-side; no user data stored on the server. 
+Font Compare is an easy way to dynamically compare locally hosted fonts. Everything is run client-side; no user data stored on the server. 
 
 
 **Versión actual:** 1.4~ynh1
