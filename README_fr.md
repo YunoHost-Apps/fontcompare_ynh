@@ -22,7 +22,7 @@ Font Compare est un moyen facile de comparer dynamiquement des polices de caract
 L'application tourne côté client et le serveur n'enregistre aucune donnée utilisateur.
 
 
-**Version incluse :** 1.4~ynh1
+**Version incluse :** 2024.12.25~ynh1
 
 **Démo :** <https://tenacitydc.com/fontcompare>
 
