@@ -7,7 +7,7 @@ name = "Font Compare"
 description.en = "Dynamically compare locally hosted fonts"
 description.fr = "Comparer des polices de caractères hébergées localement de façon dynamique"
 
-version = "1.4~ynh1"
+version = "2024.12.25~ynh1"
 
 maintainers = ["oleole39"]
 
@@ -47,8 +47,8 @@ ram.runtime = "0M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/markrai/fontcompare/archive/2dd3cf67d0f60c2e7a81dd363e8e6b009231ba43.tar.gz"
-        sha256 = "4333ff18b691ee2e4f6fde54a1f060dc64f2f6d8db64cf16c1d1be3d9e8ec23a"
+        url = "https://github.com/markrai/fontcompare/archive/e9c2bfb5d736c460eb7d58e0068899da5b6ac85b.tar.gz"
+        sha256 = "5da01b23e5f220527c307c0f5674e0ddc4af89da20c977a5d767fb3698f0a1fb"
         extract = true
         in_subdir = true
         autoupdate.strategy = "latest_github_commit"
