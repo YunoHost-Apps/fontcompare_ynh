@@ -21,7 +21,7 @@ Hij mag NIET handmatig aangepast worden.
 Font Compare is an easy way to dynamically compare locally hosted fonts. Everything is run client-side; no user data stored on the server. 
 
 
-**Geleverde versie:** 1.4~ynh1
+**Geleverde versie:** 2024.12.25~ynh1
 
 **Demo:** <https://tenacitydc.com/fontcompare>
 
