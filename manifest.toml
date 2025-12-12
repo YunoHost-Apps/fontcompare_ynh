@@ -7,7 +7,7 @@ name = "Font Compare"
 description.en = "Dynamically compare locally hosted fonts"
 description.fr = "Comparer des polices de caractères hébergées localement de façon dynamique"
 
-version = "2025.04.02~ynh1"
+version = "2025.04.02~ynh2"
 
 maintainers = ["oleole39"]
 
