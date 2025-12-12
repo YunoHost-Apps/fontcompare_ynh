@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -27,4 +26,5 @@ ynh_systemctl --service=nginx --action=reload
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression "Restoration completed for $app"
