@@ -18,7 +18,7 @@ userdoc = "https://github.com/markrai/fontcompare?tab=readme-ov-file#instruction
 code = "https://github.com/markrai/fontcompare"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
