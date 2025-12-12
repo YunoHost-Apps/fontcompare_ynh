@@ -7,7 +7,7 @@ name = "Font Compare"
 description.en = "Dynamically compare locally hosted fonts"
 description.fr = "Comparer des polices de caractères hébergées localement de façon dynamique"
 
-version = "2025.04.02~ynh1"
+version = "2025.04.02~ynh2"
 
 maintainers = ["oleole39"]
 
@@ -18,7 +18,7 @@ userdoc = "https://github.com/markrai/fontcompare?tab=readme-ov-file#instruction
 code = "https://github.com/markrai/fontcompare"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
